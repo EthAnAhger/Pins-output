@@ -1,7 +1,11 @@
-echo "# Pins-output" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/EthAnAhger/Pins-output.git
-git push -u origin main
+int testpin = 8;
+void setup() {
+  pinMode(testpin ,OUTPUT);
+}
+
+void loop(){
+  digitalWrite(testpin ,HIGH);
+  delay(5000);
+  digitalWrite(testpin ,LOW);
+  delay(5000);
+}
